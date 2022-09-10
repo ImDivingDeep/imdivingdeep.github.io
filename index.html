@@ -1,1 +1,132 @@
-"Hello World" 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="navbar" class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Alexander Lipman</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#aboutme">Over mij</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar">
+        <div id="aboutme" class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <p>Game developer</p>
+                    <p>Text</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="games" class="album py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center p-3">Games</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="card-img-top" width="100%" height="225">
+                                <rect fill="#ddd" width="100%" height="100%" />
+                                <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
+                                    font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
+                            </svg>
+                            <div class="card-body">
+                                <p class="card-text">Bomberman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="card-img-top" width="100%" height="225">
+                                <rect fill="#ddd" width="100%" height="100%" />
+                                <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
+                                    font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
+                            </svg>
+                            <div class="card-body">
+                                <p class="card-text">Burger Business</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="card-img-top" width="100%" height="225">
+                                <rect fill="#ddd" width="100%" height="100%" />
+                                <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
+                                    font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
+                            </svg>
+                            <div class="card-body">
+                                <p class="card-text">Burger Business</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="card-img-top" width="100%" height="225">
+                                <rect fill="#ddd" width="100%" height="100%" />
+                                <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
+                                    font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
+                            </svg>
+                            <div class="card-body">
+                                <p class="card-text">Burger Business</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="card-img-top" width="100%" height="225">
+                                <rect fill="#ddd" width="100%" height="100%" />
+                                <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
+                                    font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
+                            </svg>
+                            <div class="card-body">
+                                <p class="card-text">Burger Business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+<script>
+    // $(document).ready(function () {
+    //     $(".navbar .nav-link").on("click", function () {
+    //         $(".navbar").find(".active").removeClass("active");
+    //         $(this).addClass("active");
+    //     });
+    // });
+</script>
