@@ -11,6 +11,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 
+<style>
+    .info-background {
+        background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ),
+            url(./alexander.png);
+            background-repeat:no-repeat;
+            background-size:auto;
+            background-position: 50% 25%;
+        }
+</style>
+
 <body>
     <div id="navbar" class="navbar navbar-expand-sm bg-light sticky-top">
         <div class="container-fluid">
@@ -39,14 +53,15 @@
     </div>
 
     <div data-bs-spy="scroll" data-bs-target="#navbar">
-        <div id="aboutme" class="py-5 text-center container">
-            <div class="row py-lg-5">
+        <div id="aboutme" class="py-5 text-center container-fluid" >
+            <div class="row py-lg-5 info-background">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1>Game developer</h1>
-                    <p class="lead text-muted">Project lead at Galaxy Technology</p>
-                    <p>Like many others I delved into the world of Roblox as a kid. I started playing obstacle courses, RPGs, shooters and eventually found a knack in the build to survive genre where I was commended by many for my fortresses I built. This awakened in me the desire to create games. Around 2011 I was working on a little western RPG game on Roblox and when I got home from school one day I suddenly had thousands of people playing my game. I created a sequel and landed myself a spot as one of the top 300 developers of Roblox. I worked on many different projects after that and even though I haven't touched Roblox for a good couple years now, my username is still known amongst many.</p>
-                    <p>After highschool I studied for Game Developer at Grafisch Lyceum Rotterdam, received my degree and after that I went to the Breda University of Applied Sciences where I studied International Game Architecture and Design for one year. I also worked for 'Real Life Gaming' in Breda. Personally still one of my favorite places to have worked. I got to walk around as a prison guard with 'Prison Escape' and coordinate a group of 8 to 10 people. </p>
-                    <p>Now I am proudly working at Galaxy Technology as lead programmer and get to mess around with Unreal Engine for a living!</p>
+                    <h1><span class="text-light">Game developer</span></h1>
+                    <p class="lead"><span class="text-light">Lead programmer at Galaxy Technology</span></p>
+                    <p><span class="text-light">2 years of professional experience as lead developer using Unreal Engine</span></p>
+                    <p><span class="text-light">Proficient with Perforce, Asana, Photoshop</span></p>
+                    <p class="text-light">Leadership experience, both in and out of game development</p>
+                    <p class="text-light">Experience as volunteer community manager for Foxhole, a massively multiplayer game with thousands of players</p>
                 </div>
             </div>
         </div>
@@ -55,15 +70,12 @@
             <div class="container">
                 <h2 class="text-center p-3">Games</h2>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="card-img-top" width="100%" height="225">
-                                <rect fill="#ddd" width="100%" height="100%" />
-                                <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
-                                    font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
-                            </svg>
+                        <div class="card shadow-sm" type="button" data-bs-toggle="modal" data-bs-target="#islandfitnessmodal">
+                            <img class="card-img-top" width="100%" height="225" src="./islandfitness/IslandFitness.png" />
                             <div class="card-body">
-                                <p class="card-text">Desa</p>
+                                <p class="card-text">Island Fitness</p>
                             </div>
                         </div>
                     </div>
@@ -75,19 +87,7 @@
                                     font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
                             </svg>
                             <div class="card-body">
-                                <p class="card-text">Bomberman</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="card-img-top" width="100%" height="225">
-                                <rect fill="#ddd" width="100%" height="100%" />
-                                <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
-                                    font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">Burger Business</p>
+                                <p class="card-text">Angry Miners (Bomberman)</p>
                             </div>
                         </div>
                     </div>
@@ -105,13 +105,17 @@
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <svg class="card-img-top" width="100%" height="225">
-                                <rect fill="#ddd" width="100%" height="100%" />
-                                <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
-                                    font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
-                            </svg>
+                            <img class="card-img-top" width="100%" height="225" src="./highwayrunner/main.png" />
                             <div class="card-body">
-                                <p class="card-text">Burger Business</p>
+                                <p class="card-text">Highway Runner (Frogger)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top" width="100%" height="225" src="./chronocorps/choose.png" />
+                            <div class="card-body">
+                                <p class="card-text">Chrono Corps</p>
                             </div>
                         </div>
                     </div>
@@ -123,8 +127,25 @@
                                     font-weight="bold" x="50%" y="50%" text-anchor="middle">Placeholder</text>
                             </svg>
                             <div class="card-body">
-                                <p class="card-text">Burger Business</p>
+                                <p class="card-text">Bulletproof Canyon</p>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Modals -->
+                    <div class="modal fade" id="islandfitnessmodal" tabindex="-1" role="dialog" aria-labelledby="island-fitness-label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="island-fitness-label">Island fitness</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            ...
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +169,7 @@
             <h2>Contact</h2>
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <a href="https://www.linkedin.com/in/alexander-lipman-172252137/" target="_blank"><i class="bi bi-linkedin"></i> Alexander Lipman</a>
+                    <a href="https://www.linkedin.com/in/alexander-lipman-172252137 " target="_blank"><i class="bi bi-linkedin"></i> Alexander Lipman</a>
                 </div>
             </div>
         </div>
