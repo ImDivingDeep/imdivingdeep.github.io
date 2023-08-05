@@ -15,13 +15,13 @@
     .info-background {
         background-image: 
             linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
             ),
             url(./alexander.png);
             background-repeat:no-repeat;
             background-size:auto;
-            background-position: 50% 25%;
+            background-position: 40% 25%;
         }
 </style>
 
@@ -53,12 +53,13 @@
     </div>
 
     <div data-bs-spy="scroll" data-bs-target="#navbar">
-        <div id="aboutme" class="py-5 text-center container-fluid" >
+        <div id="aboutme" class="text-center container-fluid" >
             <div class="row py-lg-5 info-background">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1><span class="text-light">Game developer</span></h1>
                     <p class="lead"><span class="text-light">Lead programmer at Galaxy Technology</span></p>
                     <p><span class="text-light">2 years of professional experience as lead developer using Unreal Engine</span></p>
+                    <p class="text-light">Experienced with VR development</p>
                     <p><span class="text-light">Proficient with Perforce, Asana, Photoshop</span></p>
                     <p class="text-light">Leadership experience, both in and out of game development</p>
                     <p class="text-light">Experience as volunteer community manager for Foxhole, a massively multiplayer game with thousands of players</p>
@@ -76,11 +77,12 @@
                             <img class="card-img-top" width="100%" height="225" src="./islandfitness/IslandFitness.png" />
                             <div class="card-body">
                                 <p class="card-text">Island Fitness</p>
+                                <p class="card-text">Unreal Engine 5, VR, Lead programmer</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm" type="button" data-bs-toggle="modal" data-bs-target="#bombermanmodal">
                             <svg class="card-img-top" width="100%" height="225">
                                 <rect fill="#ddd" width="100%" height="100%" />
                                 <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
@@ -88,11 +90,12 @@
                             </svg>
                             <div class="card-body">
                                 <p class="card-text">Angry Miners (Bomberman)</p>
+                                <p class="card-text">Unreal Engine 5, Lead programmer</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm" type="button" data-bs-toggle="modal" data-bs-target="#burgerbusinessmodal">
                             <svg class="card-img-top" width="100%" height="225">
                                 <rect fill="#ddd" width="100%" height="100%" />
                                 <text fill="rgba(0,0,0,0.5)" font-family="sans-serif" font-size="30" dy="10.5"
@@ -100,6 +103,7 @@
                             </svg>
                             <div class="card-body">
                                 <p class="card-text">Burger Business</p>
+                                <p class="card-text">Unreal Engine 5, Lead programmer</p>
                             </div>
                         </div>
                     </div>
@@ -108,6 +112,7 @@
                             <img class="card-img-top" width="100%" height="225" src="./highwayrunner/main.png" />
                             <div class="card-body">
                                 <p class="card-text">Highway Runner (Frogger)</p>
+                                <p class="card-text">Unreal Engine 5, Lead programmer</p>
                             </div>
                         </div>
                     </div>
@@ -116,6 +121,7 @@
                             <img class="card-img-top" width="100%" height="225" src="./chronocorps/choose.png" />
                             <div class="card-body">
                                 <p class="card-text">Chrono Corps</p>
+                                <p class="card-text">Unreal Engine 5, Gameplay programmer</p>
                             </div>
                         </div>
                     </div>
@@ -128,6 +134,7 @@
                             </svg>
                             <div class="card-body">
                                 <p class="card-text">Bulletproof Canyon</p>
+                                <p class="card-text">Roblox</p>
                             </div>
                         </div>
                     </div>
@@ -137,8 +144,8 @@
                         <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="island-fitness-label">Island fitness</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h5 class="modal-title" id="island-fitness-label">Island Fitness</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             </div>
@@ -148,6 +155,39 @@
                         </div>
                         </div>
                     </div>
+
+                    <div class="modal fade" id="bombermanmodal" tabindex="-1" role="dialog" aria-labelledby="bomberman-label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="bomberman-label">Angry Miners</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            ...
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="burgerbusinessmodal" tabindex="-1" role="dialog" aria-labelledby="burger-business-label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="burger-business-label">Burger Business</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            ...
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
